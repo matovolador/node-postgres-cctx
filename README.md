@@ -29,8 +29,10 @@ Either with cronjob, or single execution, the code does as follows:
 * TESTNET="0"
 * VERBOSE="0"
 * DATABASE_URL="postgresql://postgres:secret@0.0.0.0:5432/project"
-* ENTRY_SIGNAL=""
-* EXIT_SIGNAL=""
+* SIGNAL_EXIT_LONG="YOUR_EXIT_LONG_SIGNAL_VALUE"
+* SIGNAL_ENTER_LONG="YOUR_ENTER_LONG_SIGNAL_VALUE"
+* SIGNAL_ENTER_SHORT="YOUR_ENTER_SHORT_SIGNAL_VALUE"
+* SIGNAL_EXIT_SHORT="YOUR_EXIT_SHORT_SIGNAL_VALUE"
 
 Set TESTNET="1" if you wish to run the code in Binance Test Network.
 
