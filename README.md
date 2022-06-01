@@ -28,7 +28,8 @@ Either with cronjob, or single execution, the code does as follows:
 * API_SECRET="YOUR_API_SECRET"
 * TESTNET="0"
 * VERBOSE="0"
-* DATABASE_URL="postgresql://postgres:secret@0.0.0.0:5432/project"
+* DATABASE_URL="postgresql://postgres:secret@0.0.0.0:5432/project"  ( for dev outside of docker)
+* DATABASE_URL="postgresql://postgres:secret@db:5432/project" (for full docker deployment)
 * SIGNAL_EXIT_LONG="YOUR_EXIT_LONG_SIGNAL_VALUE"
 * SIGNAL_ENTER_LONG="YOUR_ENTER_LONG_SIGNAL_VALUE"
 * SIGNAL_ENTER_SHORT="YOUR_ENTER_SHORT_SIGNAL_VALUE"
