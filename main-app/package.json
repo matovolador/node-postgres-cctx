@@ -1,0 +1,30 @@
+{
+  "name": "cctx-connection-webhook-signal",
+  "version": "1.0.0",
+  "description": "crypto exchange API connector - binance futures - sends to webhook - cronjob",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js no-cron main",
+    "migrate": "node-pg-migrate",
+    "cron": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matovolador/node-postgres-cctx.git"
+  },
+  "author": "Matias Garafoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matovolador/node-postgres-cctx/issues"
+  },
+  "homepage": "https://github.com/matovolador/node-postgres-cctx#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ccxt": "^1.82.16",
+    "dotenv": "^16.0.1",
+    "node-cron": "^3.0.0",
+    "node-pg-migrate": "^6.2.1",
+    "pg": "^8.7.3"
+  }
+}
