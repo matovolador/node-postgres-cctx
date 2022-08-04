@@ -4,14 +4,13 @@ services:
   db:
     image: postgres:13
     restart: always
-    ports:
-      - 5432:5432
     networks:
       - main_network
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=secret
       - POSTGRES_DB=project
+      - PGPORT=5432
     volumes:
       - database-volume:/var/lib/postgresql/data
 
