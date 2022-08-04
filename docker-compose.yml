@@ -18,7 +18,7 @@ services:
     build: main-app
     restart: always
     ports:
-      - 5050:5050
+      - 80:5050
     networks:
       - main_network
     depends_on:
